@@ -1,0 +1,179 @@
+body {
+    background-color: #D16089;
+    color: #F4F4F4;
+    font-family: 'Montserrat', system-ui;
+    margin: 0;
+}
+
+/* 3 lvl title & description styles*/
+.title-container{
+    display: flex;
+    position: relative;
+    margin-top: 135px;
+}
+
+.title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    line-height: normal;
+    margin-left: 96px;
+}
+
+.title-img{
+    position: absolute;
+    right: 100px;
+}
+
+#top-level-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+#middle-level-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#bottom-level-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+#subtitle{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+#description{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+
+/* "Try Now" button */
+.button-container{
+    margin-top: 120px;
+}
+.button{
+    cursor: pointer;
+    color: #F4F4F4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #D16089;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 12px 18px 12px 18px;
+    border: solid #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button:active{ 
+    background-color: #F4F4F4;
+    color: #111111;
+    border: solid #111111;
+}
+
+/* rectangle-on-scroll block */
+.rectangle-on-scroll{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.rectangle-img{
+    width: 100%;
+    margin-top: 100px;
+}
+.rectangle-text{
+    color: #7B7B7B;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+}
+
+/* 4 content blocks */
+.content-block{
+    margin-top: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    filter: drop-shadow(-4px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+.square{
+    width: 708px;
+    height: 434px;
+    background-color: #F4F4F4;
+    color: #000000;
+    align-items: center;
+}
+.square-shadow{
+    width: 10px;
+    height: 434px;
+    background-color: #969595;
+}
+.img-with-text{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.square h3{
+    margin-left: 275px;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+#first-block-title{
+    margin-bottom: 16px;
+}
+#first-block{
+    margin-left: 76px;
+}
+#first-block p{
+    margin-left: 46px;
+}
+
+#second-block-title{
+    margin-bottom: 73px;
+}
+#second-block{
+    margin-left: 74px;
+}
+#second-block p{
+    margin-left: 44px;
+}
+
+#third-block-title{
+    margin-bottom: 46px;
+}
+#third-block{
+    margin-left: 93px;
+}
+#third-block p{
+    margin-left: 53px;
+}
+
+#fourth-block-title{
+    margin-bottom: 99px;
+}
+#fourth-block{
+    margin-left: 113px;
+}
+#fourth-block p{
+    margin-left: 83px;
+}
