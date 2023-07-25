@@ -7,9 +7,10 @@ body {
 
 /* 3 lvl title & description styles*/
 .title-container{
-    display: flex;
-    position: relative;
     margin-top: 135px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: start;
 }
 
 .title {
@@ -17,11 +18,11 @@ body {
     font-style: normal;
     line-height: normal;
     margin-left: 96px;
+    margin-right: 380px;
 }
 
 .title-img{
-    position: absolute;
-    right: 100px;
+   /* ... */
 }
 
 #top-level-title {
@@ -91,6 +92,7 @@ body {
     margin-top: 100px;
 }
 .rectangle-text{
+    max-width:100%;
     color: #7B7B7B;
     font-size: 64px;
     font-style: normal;
@@ -176,4 +178,40 @@ body {
 }
 #fourth-block p{
     margin-left: 83px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-wave-img{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.footer-block{
+    width: 100%;
+    height: 300px;
+    top: 70%;
+    background-color: #595959;
+    position: absolute;
+    justify-content: center;
+    display: inline-flex;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#left-footer-text{
+    margin-right: 250px;
+    margin-left: 190px;
+}
+
+#right-footer-text{
+    margin-left: 250px;
+    margin-right: 100px;
 }
