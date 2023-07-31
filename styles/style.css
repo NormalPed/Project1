@@ -158,7 +158,7 @@ header{
 
 /* 4 content blocks */
 .content-block{
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     position: relative;
     justify-content: center;

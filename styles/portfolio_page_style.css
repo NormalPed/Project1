@@ -76,7 +76,9 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    border: #B4B4B4 4px solid;
+    border: #B4B4B4 1px solid;
+    border-left: #B4B4B4 4px solid;
+    border-right: #B4B4B4 4px solid;
     border-bottom: #B4B4B4 3px solid;
 }
 
@@ -117,6 +119,12 @@ header{
 
 #top-contentblock{
     border-radius: 40px 40px 0px 0px;
+    border-top: #B4B4B4 4px solid;
+}
+
+#bottom-contentblock{
+    border-radius: 0px 0px 40px 40px;
+    border-bottom: #B4B4B4 4px solid;
 }
 
 /* FOOTER */
