@@ -118,6 +118,7 @@ header {
     font-weight: 400;
     line-height: normal;
     margin-top: 25px;
+    width: 245px;
 }
 
 
@@ -284,6 +285,9 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
+#footer-right-text{
+    width: 500px;
+}
 
 
 
@@ -444,6 +448,9 @@ footer {
         height: 82px;
         font-size: 13px;
     }
+    #footer-right-text{
+        width: 400px;
+    }
 }
 
 
@@ -584,6 +591,11 @@ footer {
         width: 55px;
         height: 50px;
     }
+
+    /* FOOTER */
+    #footer-right-text{
+        width: 300px;
+    }
 }
 
 
@@ -591,7 +603,7 @@ footer {
 
 
 /* TABLET TO MOBILE TRANSFORMATION */
-@media (max-width: 740px) {
+@media (max-width: 750px) {
     header {
         display: none;
     }
@@ -819,5 +831,8 @@ footer {
 
     .footer-block {
         font-size: 10px;
+    }
+    #footer-right-text{
+        width: 200px;
     }
 }
