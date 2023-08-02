@@ -10,6 +10,10 @@ body {
     display: none;
 }
 
+#notebook-scene{
+    display: none;
+}
+
 /* HEADER */
 header {
     width: 100%;
@@ -21,6 +25,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hamburger-tablet{
+    display: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.hamburger-mobile{
+    display: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
 }
 
 .header-buttons {
@@ -69,7 +87,7 @@ header {
 .title-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -128,6 +146,8 @@ header {
 }
 
 .button {
+    height: 60px;
+    width: 150px;
     cursor: pointer;
     color: #F4F4F4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -292,6 +312,20 @@ footer {
 
 
 /* ON DISPLAY SIZE CHANGED*/
+@media (max-width: 1366px){
+    #notebook-scene{
+        display: flex;
+    }
+    #desktop-scene{
+        display: none;
+    }
+    .button {
+        height: 55px;
+        width: 140px;
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 1160px) {
 
     /* HEADER */
@@ -345,11 +379,20 @@ footer {
         font-size: 16px;
     }
 
+    /* TRY NOW BUTTON */
+    .button-container{
+        margin-top: 40px;
+    }
+
     .button {
         font-size: 16px;
         padding: 10px 15px 10px 15px;
+        height: 50px;
+        width: 120px;
     }
+    
 
+    /* RECTANGLE */
     .rectangle-text {
         font-size: 52px;
     }
@@ -454,14 +497,22 @@ footer {
 }
 
 
-@media (max-width: 940px) {
+@media (max-width: 945px) {
     .header-buttons {
+        font-size: 18px;
+    }
+    .active-button {
+        border: solid 3px #F4F4F4;
         font-size: 18px;
     }
 }
 
 @media (max-width: 916px) {
     .header-buttons {
+        font-size: 16px;
+    }
+    .active-button {
+        border: solid 2px #F4F4F4;
         font-size: 16px;
     }
 
@@ -480,6 +531,14 @@ footer {
 @media (max-width: 890px) {
     /* HEADER */
 
+    header{
+        height: 100px;
+    }
+
+    .hamburger-tablet{
+        display: flex;
+        margin-right: 28px;
+    }
     .header-buttons {
         display: none;
     }
@@ -488,6 +547,7 @@ footer {
         display: flex;
         width: 33px;
         height: 41px;
+        padding: 30px;
     }
 
     /* BODY */
@@ -499,6 +559,20 @@ footer {
         height: 255px;
         margin-right: 30px;
     }
+
+    /* TRY NOW BUTTON */
+
+    .button-container {
+        margin-top: 35px;
+    }
+    
+    .button {
+        width: 245px;
+        height: 60px;
+        font-size: 22px;
+        padding: 10px 15px 10px 15px;
+    }
+
 
     /* 4 content blocks */
     .content-block {
@@ -603,9 +677,27 @@ footer {
 
 
 /* TABLET TO MOBILE TRANSFORMATION */
-@media (max-width: 750px) {
+@media (max-width: 755px) {
     header {
+        height: 80px;
+        flex-direction: row-reverse;
+        z-index: -1;
+        position: relative;
+    }
+    .hamburger-tablet{
         display: none;
+    }
+
+    .hamburger-mobile{
+        display: flex;
+        align-self: flex-start;
+        margin-left: 28px;
+        margin-top: -28px;
+        margin-bottom: -50px;
+        position: sticky;
+        top: 0;
+        padding-top: 28px;
+        z-index: 1;
     }
 
     /* BODY */
@@ -619,6 +711,10 @@ footer {
         margin: 0;
     }
 
+    .logo{
+        padding: 10px;
+        padding-right: 30px;
+    }
     .title-img {
         display: none;
     }
@@ -641,9 +737,11 @@ footer {
     }
 
     #top-level-title {
+        margin-top: 0px;
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 12px;
+        margin-left: 30px;
     }
 
     #middle-level-title {
@@ -651,6 +749,7 @@ footer {
         font-weight: 700;
         margin-top: 12px;
         margin-bottom: 12px;
+        margin-left: 30px;
     }
 
     #bottom-level-title {
@@ -658,6 +757,7 @@ footer {
         font-weight: 700;
         margin-top: 12px;
         margin-bottom: 6px;
+        margin-left: 30px;
     }
 
     #subtitle {
@@ -711,6 +811,7 @@ footer {
         position: relative;
         justify-content: center;
         display: flex;
+        z-index: -1;
     }
 
     .rectangle-img {
