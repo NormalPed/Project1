@@ -7,25 +7,29 @@
     <title>Home Page</title>
   </head>
 
-  <header>
+  <header class="js-header">
     <div class="logo">
       <img src="images/Logo.svg" alt="" />
     </div>
     <div class="header-buttons">
-      <p class="button-header"><button class="active-button">Home</button></p>
-      <p class="button-header">
+      <div class="button-header" id="active-button">Home</div>
+      <div class="button-header">
         <a href="#" class="header-links">Contact Us</a>
-      </p>
-      <p class="button-header">
+      </div>
+      <div class="button-header">
         <a href="portfolio_page.html" class="header-links">Portfolio</a>
-      </p>
-      <p class="button-header"><a href="#" class="header-links">About Us</a></p>
+      </div>
+      <div class="button-header">
+        <a href="#" class="header-links">About Us</a>
+      </div>
     </div>
-    <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-tablet">
+    <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-tablet" />
   </header>
 
   <body>
-    <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-mobile">
+    <div class="hamburger-mobile">
+      <img src="images/SIDEBUTTON_mobile.svg" alt="" class="hamburger-mobile-img" />
+    </div>
     <!-- 3 lvl title & description-->
     <div class="title-container">
       <div class="title">
@@ -33,11 +37,10 @@
         <h2 id="middle-level-title">Next To You</h2>
         <h1 id="bottom-level-title">FIRE</h1>
         <p id="subtitle">I have only one burnin' desire</p>
-        <img src="images/Scene.svg" alt="" class="mobile-scene">
+        <img src="images/Scene.svg" alt="" class="mobile-scene" />
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna
-          aliqua.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <!-- "Try Now" button -->
         <div class="button-container">
@@ -45,8 +48,8 @@
         </div>
       </div>
       <div class="title-img">
-        <img src="images/SceneX2.svg" alt="" id="desktop-scene"/>
-        <img src="images/SceneX1.5.svg" alt="" id="notebook-scene">
+        <img src="images/SceneX2.svg" alt="" id="desktop-scene" />
+        <img src="images/SceneX1.5.svg" alt="" id="notebook-scene" />
       </div>
     </div>
 
@@ -62,8 +65,8 @@
       <div class="square">
         <h3 id="first-block-title">Building</h3>
         <div class="img-with-text" id="first-block">
-          <img src="images/building.svg" alt="" id="building-img"/>
-          <p>This is definitely a <br>big building.</p>
+          <img src="images/building.svg" alt="" id="building-img" />
+          <p>This is definitely a <br />big building.</p>
         </div>
       </div>
       <div class="square-shadow"></div>
@@ -73,7 +76,7 @@
       <div class="square">
         <h3 id="second-block-title">House</h3>
         <div class="img-with-text" id="second-block">
-          <img src="images/house.svg" alt="" id="house-img"/>
+          <img src="images/house.svg" alt="" id="house-img" />
           <p>Just a little house.</p>
         </div>
       </div>
@@ -84,7 +87,7 @@
       <div class="square">
         <h3 id="third-block-title">Zero</h3>
         <div class="img-with-text" id="third-block">
-          <img src="images/zero.svg" alt="" id="zero-img"/>
+          <img src="images/zero.svg" alt="" id="zero-img" />
           <p>Ideas i had for creating this <br />content.</p>
         </div>
       </div>
@@ -95,7 +98,7 @@
       <div class="square">
         <h3 id="fourth-block-title">Nothing</h3>
         <div class="img-with-text" id="fourth-block">
-          <img src="images/wind.svg" alt="" id="wind-img"/>
+          <img src="images/wind.svg" alt="" id="wind-img" />
           <p>
             There is definitely nothing. <br />Just blowing wind. It’s not
             <br />even my icon.
@@ -111,9 +114,11 @@
     <div class="footer-block">
       <div>Some copy rights</div>
       <div id="footer-right-text">
-        What do you think the “Contact Us ” button is for? Do you really
-        expect Instagram, Facebook etc. icons here?
+        What do you think the “Contact Us ” button is for? Do you really expect
+        Instagram, Facebook etc. icons here?
       </div>
     </div>
   </footer>
+
+  <script src="scripts/header.js"></script>
 </html>

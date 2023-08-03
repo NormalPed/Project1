@@ -7,7 +7,9 @@ body {
 }
 
 /* HEADER */
-
+.logo-mobile{
+    display: none;
+}
 .hamburger-tablet{
     display: none;
     height: 50px;
@@ -24,16 +26,22 @@ body {
     display: none;
 }
 
-header{
+header {
     width: 100%;
     height: 135px;
+    top: -135px;
     background-color: #D16089;
-    position: sticky;
-    top: 0;
+    transition: all .2s ease;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header.fixed{
+    position: fixed;
+    transform: translateY(135px);
+    background-color: #0f283ad3;
 }
 
 .header-buttons{
@@ -65,11 +73,11 @@ header{
     padding-bottom: 2px;
 }
 
-.active-button{
+#active-button{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F4F4F4;
-    background-color:#D16089;
     border: solid 4px #F4F4F4;
+    padding: 0px 5px 2px 5px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -181,7 +189,12 @@ footer{
         font-size: 20px;
     }
 
-    .active-button{
+    .logo-img {
+        display: flex;
+        width: 33px;
+        height: 41px;
+    }
+    #active-button{
         border: solid 4px #F4F4F4;
         font-size: 20px;
     }
@@ -202,27 +215,34 @@ footer{
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 980px) {
     .header-buttons {
         font-size: 18px;
     }
-    .active-button {
+    #active-button {
         border: solid 3px #F4F4F4;
         font-size: 18px;
     }
+    
 }
 
-@media (max-width: 926px) {
+@media (max-width: 960px) {
     .header-buttons {
         font-size: 16px;
     }
-    .active-button {
+    #active-button {
         border: solid 2px #F4F4F4;
         font-size: 16px;
     }
 
     .rectangle-text {
         font-size: 44px;
+    }
+    header{
+        height: 100px;
+    }
+    .logo{
+        padding: 30px;
     }
 }
 
@@ -231,7 +251,7 @@ footer{
 
 
 /* FOR TABLET IPAD AIR EXAMPLE */
-@media (max-width: 895px) {
+@media (max-width: 928px) {
     header{
         height: 100px;
     }
@@ -280,13 +300,12 @@ footer{
 }
 
 
-/* TABLET TO MOBILE TRANSFORMATION */
 @media (max-width: 755px) {
     .header-buttons{
         font-size: 18px;
     }
 
-    .active-button{
+    #active-button{
         border: solid 4px #F4F4F4;
         font-size: 18px;
     }
@@ -310,17 +329,27 @@ footer{
     }
 }
 
+
+/* TABLET TO MOBILE TRANSFORMATION */
 @media (max-width: 660px){
-    
+    header{
+        display: none;
+    }
+    .logo-mobile{
+        display: flex;
+        width: 30px;
+        height: 34px;
+        margin-bottom:68px;
+        margin-top: 30px;
+    }
     .mobile-header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-left: 35px;
-        align-items: center;
-        height: 100px;
+        margin-right: 35px;
+        align-items: flex-end;
+        height:132px;
         position: sticky;
-        top: 0;
-        z-index: 2;
     }
     .mobile-title{
         display: flex;
@@ -336,6 +365,16 @@ footer{
     }
     .hamburger-mobile-img{
         display: flex;
+    }
+    .mobile-hamburger{
+        display: flex;
+        align-self: flex-start;
+        margin-left: 28px;
+        margin-top: -78px;
+        position: sticky;
+        top: 0;
+        padding-top: 28px;
+        z-index: 1;
     }
 
 
@@ -357,7 +396,7 @@ footer{
     }
 
     #wrapper{
-        margin-top: 0px;
+        margin-top: 82px;
     }
     .block-img{
         margin-top: 40px;

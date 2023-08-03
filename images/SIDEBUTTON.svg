@@ -1,24 +1,9 @@
-<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_100_1035)">
-<mask id="path-1-inside-1_100_1035" fill="white">
-<path d="M4 10C4 4.47715 8.47715 0 14 0H54C59.5228 0 64 4.47715 64 10V50C64 55.5228 59.5228 60 54 60H14C8.47715 60 4 55.5228 4 50V10Z"/>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_389_146" fill="white">
+<path d="M0 10C0 4.47715 4.47715 0 10 0H50C55.5228 0 60 4.47715 60 10V50C60 55.5228 55.5228 60 50 60H10C4.47715 60 0 55.5228 0 50V10Z"/>
 </mask>
-<path d="M4 10C4 4.47715 8.47715 0 14 0H54C59.5228 0 64 4.47715 64 10V50C64 55.5228 59.5228 60 54 60H14C8.47715 60 4 55.5228 4 50V10Z" fill="#D16089"/>
-<path d="M-1 10C-1 1.71573 5.71573 -5 14 -5H54C62.2843 -5 69 1.71573 69 10H59C59 7.23858 56.7614 5 54 5H14C11.2386 5 9 7.23858 9 10H-1ZM69 50C69 58.2843 62.2843 65 54 65H14C5.71573 65 -1 58.2843 -1 50H9C9 52.7614 11.2386 55 14 55H54C56.7614 55 59 52.7614 59 50H69ZM14 65C5.71573 65 -1 58.2843 -1 50V10C-1 1.71573 5.71573 -5 14 -5V5C11.2386 5 9 7.23858 9 10V50C9 52.7614 11.2386 55 14 55V65ZM54 -5C62.2843 -5 69 1.71573 69 10V50C69 58.2843 62.2843 65 54 65V55C56.7614 55 59 52.7614 59 50V10C59 7.23858 56.7614 5 54 5V-5Z" fill="#F4F4F4" mask="url(#path-1-inside-1_100_1035)"/>
-<rect x="15.5" y="13.5" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
-<rect x="15.5" y="27.75" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
-<rect x="15.5" y="42" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
-</g>
-<defs>
-<filter id="filter0_d_100_1035" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_100_1035"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_100_1035" result="shape"/>
-</filter>
-</defs>
+<path d="M-5 10C-5 1.71573 1.71573 -5 10 -5H50C58.2843 -5 65 1.71573 65 10H55C55 7.23858 52.7614 5 50 5H10C7.23858 5 5 7.23858 5 10H-5ZM65 50C65 58.2843 58.2843 65 50 65H10C1.71573 65 -5 58.2843 -5 50H5C5 52.7614 7.23858 55 10 55H50C52.7614 55 55 52.7614 55 50H65ZM10 65C1.71573 65 -5 58.2843 -5 50V10C-5 1.71573 1.71573 -5 10 -5V5C7.23858 5 5 7.23858 5 10V50C5 52.7614 7.23858 55 10 55V65ZM50 -5C58.2843 -5 65 1.71573 65 10V50C65 58.2843 58.2843 65 50 65V55C52.7614 55 55 52.7614 55 50V10C55 7.23858 52.7614 5 50 5V-5Z" fill="#F4F4F4" mask="url(#path-1-inside-1_389_146)"/>
+<rect x="11.5" y="13.5" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
+<rect x="11.5" y="27.75" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
+<rect x="11.5" y="42" width="37.5" height="4.5" rx="2.25" fill="#F4F4F4"/>
 </svg>

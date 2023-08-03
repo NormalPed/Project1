@@ -6,31 +6,38 @@
     <link rel="stylesheet" href="styles/portfolio_page_style.css" />
     <title>Portfolio Page</title>
   </head>
-  <header>
+  <header class="js-header">
     <div class="logo">
       <img src="images/Logo.svg" alt="" class="logo-img"/>
     </div>
     <div class="header-buttons">
-      <p class="button-header"><a href="index.html" class="header-links">Home</a></p>
-      <p class="button-header">
+      <div class="button-header">
+        <a href="index.html" class="header-links">Home</a>
+      </div>
+      <div class="button-header">
         <a href="#" class="header-links">Contact Us</a>
-      </p>
-      <p class="button-header">
-        <button class="active-button">Portfolio</button>
-      </p>
-      <p class="button-header"><a href="#" class="header-links">About Us</a></p>
+      </div>
+      <div class="button-header" id="active-button">
+        Portfolio
+      </div>
+      <div class="button-header">
+        <a href="#" class="header-links">About Us</a>
+      </div>
     </div>
     <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-tablet">
   </header>
 
   <body>
     <div class="mobile-header">
-      <div class="mobile-hamburger">
-        <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-mobile-img">
-      </div>
       <div class="mobile-title">
         Portfolio
       </div>
+      <div>
+        <img src="images/Logo.svg" alt="" class="logo-mobile">
+      </div>
+    </div>
+    <div class="mobile-hamburger">
+      <img src="images/SIDEBUTTON_mobile.svg" alt="" class="hamburger-mobile-img">
     </div>
 
     <div id="wrapper">
@@ -102,4 +109,6 @@
       </div>
     </div>
   </footer>
+
+  <script src="scripts/header.js"></script>
 </html>
