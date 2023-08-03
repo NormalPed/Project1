@@ -7,6 +7,14 @@ body {
 }
 
 /* HEADER */
+
+.hamburger-tablet{
+    display: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
 header{
     width: 100%;
     height: 135px;
@@ -15,7 +23,7 @@ header{
     top: 0;
     z-index: 10;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -48,7 +56,7 @@ header{
     padding-bottom: 2px;
 }
 
-.home-button{
+.active-button{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F4F4F4;
     background-color:#D16089;
@@ -79,7 +87,6 @@ header{
     border: #B4B4B4 1px solid;
     border-left: #B4B4B4 4px solid;
     border-right: #B4B4B4 4px solid;
-    border-bottom: #B4B4B4 3px solid;
 }
 
 .block-img{
@@ -155,3 +162,173 @@ footer{
     font-weight: 500;
     line-height: normal;
 }
+#footer-right-text{
+    width: 500px;
+}
+
+
+@media(max-width: 1030px){
+    .header-buttons{
+        font-size: 20px;
+    }
+
+    .active-button{
+        border: solid 4px #F4F4F4;
+        font-size: 20px;
+    }
+    .block-title{
+        font-size: 28px;
+    }
+    .block-text{
+        font-size: 20px;
+    }
+    .block-link{
+        font-size: 20px;
+    }
+    .contentblock-text{
+        margin-right: 100px;
+    }
+    #footer-right-text{
+        width: 400px;
+    }
+}
+
+@media (max-width: 960px) {
+    .header-buttons {
+        font-size: 18px;
+    }
+    .active-button {
+        border: solid 3px #F4F4F4;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 926px) {
+    .header-buttons {
+        font-size: 16px;
+    }
+    .active-button {
+        border: solid 2px #F4F4F4;
+        font-size: 16px;
+    }
+
+    .rectangle-text {
+        font-size: 44px;
+    }
+}
+
+
+
+
+
+/* FOR TABLET IPAD AIR EXAMPLE */
+@media (max-width: 895px) {
+    header{
+        height: 100px;
+    }
+    .logo{
+        padding: 30px;
+        margin-left: 46px;
+    }
+
+    .header-buttons{
+        display: none;
+    }
+    .hamburger-tablet{
+        display: flex;
+        margin-right: 28px;
+    }
+    .contentblock{
+        width: 100%;
+        border: #B4B4B4 1px solid;
+        border-left: #B4B4B4 0px solid;
+        border-right: #B4B4B4 0 px solid;
+        border-bottom: #B4B4B4 3px solid;
+    }    
+    #top-contentblock{
+        border-radius: 0px 0px 0px 0px;
+        border-top: #B4B4B4 3px solid;
+    }
+    
+    #bottom-contentblock{
+        border-radius: 0px 0px 0px 0px;
+        border-bottom: #B4B4B4 3px solid;
+    }
+    .contentblock-text{
+        margin-right: 50px;
+    }
+
+    .footer-block{
+        font-size: 14px;
+    }
+    #footer-right-text{
+        width: 300px;
+    }
+}
+
+
+/* TABLET TO MOBILE TRANSFORMATION */
+@media (max-width: 755px) {
+    .header-buttons{
+        font-size: 18px;
+    }
+
+    .active-button{
+        border: solid 4px #F4F4F4;
+        font-size: 18px;
+    }
+    .block-title{
+        font-size: 24px;
+    }
+    .block-text{
+        font-size: 18px;
+    }
+    .block-link{
+        font-size: 18px;
+    }
+    .contentblock-text{
+        margin-left: 90px;
+    }
+    .footer-block{
+        font-size: 12px;
+    }
+    #footer-right-text{
+        width: 200px;
+    }
+}
+
+@media (max-width: 660px){
+    header {
+        height: 80px;
+    }
+    .logo-img{
+        padding: 10px;
+        padding-right: 30px;
+        width: 40px;
+        height: 52px;
+    }
+    .block-img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 60px;
+    }
+
+    .contentblock-text{
+        margin-right: 30px;
+        align-self: center;
+        margin-left: 30px;
+    }
+    
+    .block-title{
+        font-size: 20px;
+    }
+    
+    .block-text{
+        font-size: 16px;
+    }
+    
+    .block-link{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+} 
