@@ -6,17 +6,27 @@ body {
     height: 100%;
 }
 
+/*____________________ Screen changed imgs ____________________ */
+.logo {
+    padding: 50px;
+    margin-left: 46px;
+}
+
 .mobile-scene {
     display: none;
 }
-.logo-mobile{
-    display: none;
-}
-#notebook-scene{
+
+.logo-mobile {
     display: none;
 }
 
-/* HEADER */
+#notebook-scene {
+    display: none;
+}
+/*____________________ /Screen changed imgs ____________________ */
+
+
+/*** _________________________ HEADER _________________________ ***/
 header {
     width: 100%;
     height: 135px;
@@ -29,28 +39,16 @@ header {
     justify-content: space-between;
 }
 
-header.fixed{
+header.fixed {
     position: fixed;
     transform: translateY(135px);
     background-color: #0f283ad3;
 }
 
-.hamburger-tablet{
-    display: none;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
+/*____________________ /HEADER ____________________ */
 
-.hamburger-mobile{
-    display: none;
-    height: 50px;
-    width: 50px;
-}
-.hamburger-mobile-img{
-    cursor: pointer;
-}
 
+/*____________________ HEADER NAV ____________________ */
 .header-buttons {
     display: flex;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -59,11 +57,6 @@ header.fixed{
     font-weight: 700;
     line-height: normal;
     justify-self: flex-end;
-}
-
-.logo {
-    padding: 50px;
-    margin-left: 46px;
 }
 
 .button-header {
@@ -91,11 +84,35 @@ header.fixed{
     line-height: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/*____________________ /HEADER NAV ____________________ */
 
-/* BODY */
 
-/* SIDEMENU */
-.side-menu{
+/*____________________ HAMBURGERS ____________________ */
+.hamburger-tablet {
+    display: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.hamburger-mobile {
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.hamburger-mobile-img {
+    cursor: pointer;
+}
+/*____________________ /HAMBURGERS ____________________ */
+/*** _________________________ /HEADER _________________________ ***/
+
+
+
+/*** _________________________ BODY _________________________***/
+
+/*____________________ SIDEMENU TABLET ____________________ */
+.side-menu {
     position: fixed;
     top: 0;
     left: -50%;
@@ -108,14 +125,17 @@ header.fixed{
     justify-content: center;
     align-items: center;
 }
-.side-menu ul{
+
+.side-menu ul {
     list-style: none;
     padding: 0;
 }
-.side-menu li{
+
+.side-menu li {
     margin-bottom: 50px;
 }
-.side-menu li a{
+
+.side-menu li a {
     text-decoration: none;
     color: #F4F4F4;
     font-size: 24px;
@@ -123,16 +143,63 @@ header.fixed{
     font-weight: 700;
     line-height: normal;
 }
+
 .side-menu li a:hover {
     border-bottom: 3px solid #F4F4F4;
     padding-bottom: 2px;
 }
-.show-menu{
+
+.show-menu {
     left: 0%;
 }
+/*____________________ /SIDEMENU TABLET ____________________ */
 
 
-/* 3 lvl title & description styles*/
+/*____________________ SIDEMENU MOBILE ____________________ */
+.sidemenu-mobile {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #0f283ad3;
+    z-index: 11;
+    transition: right 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidemenu-mobile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidemenu-mobile li {
+    margin-bottom: 70px;
+}
+
+.sidemenu-mobile li a {
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sidemenu-mobile li a:hover {
+    border-bottom: 3px solid #F4F4F4;
+    padding-bottom: 2px;
+}
+
+.show-menu-mobile {
+    right: 0%;
+}
+/*____________________ /SIDEMENU MOBILE ____________________ */
+
+
+/*____________________ 3 lvl title & description styles ____________________ */
 .title-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,9 +254,10 @@ header.fixed{
     margin-top: 25px;
     width: 245px;
 }
+/*____________________ /3 lvl title & description styles ____________________ */
 
 
-/* "Try Now" button */
+/*____________________ "Try Now" button ____________________ */
 .button-container {
     margin-top: 50px;
 }
@@ -215,8 +283,10 @@ header.fixed{
     color: #111111;
     border: solid #111111;
 }
+/*____________________ "Try Now" button ____________________ */
 
-/* rectangle-on-scroll block */
+
+/*____________________ rectangle-on-scroll block ____________________ */
 .rectangle-on-scroll {
     position: relative;
     justify-content: center;
@@ -237,8 +307,10 @@ header.fixed{
     position: absolute;
     top: 50%;
 }
+/*____________________ /rectangle-on-scroll block ____________________ */
 
-/* 4 content blocks */
+
+/*____________________ 4 content blocks ____________________ */
 .content-block {
     margin-top: 150px;
     display: flex;
@@ -327,8 +399,11 @@ header.fixed{
 #fourth-block p {
     margin-left: 83px;
 }
+/*____________________ /4 content blocks ____________________ */
+/*** _________________________ /BODY _________________________***/
 
-/* FOOTER */
+
+/*** _________________________ FOOTER _________________________***/
 footer {
     display: flex;
     position: relative;
@@ -354,42 +429,48 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
-#footer-right-text{
+
+#footer-right-text {
     width: 500px;
 }
+/*** _________________________ /FOOTER _________________________***/
 
 
 
-/* ON DISPLAY SIZE CHANGED*/
-@media (max-width: 1366px){
-    #notebook-scene{
+/*****-----_________________________ ON DISPLAY SIZE CHANGED _________________________-----*****/
+
+
+/*** _________________________ 1366px _________________________***/
+@media (max-width: 1366px) {
+
+    /*_______________ Main img change _______________ */
+    #notebook-scene {
         display: flex;
     }
-    #desktop-scene{
+
+    #desktop-scene {
         display: none;
     }
+    /*_______________ /Main img change _______________ */
+
+
+    /*_______________ "Try Now" Button _______________ */
     .button {
         height: 55px;
         width: 140px;
         font-size: 18px;
     }
+    /*_______________ "Try Now" Button _______________ */
 }
+/*** _________________________ /1366px _________________________***/
 
+
+/*** _________________________ 1160px _________________________***/
 @media (max-width: 1160px) {
 
-    /* HEADER */
-
+    /***_______________ HEADER _______________ ***/
     header {
         height: 125px;
-    }
-
-    .header-buttons {
-        font-size: 20px;
-    }
-
-    #active-button {
-        border: solid 3px #F4F4F4;
-        font-size: 20px;
     }
 
     .logo {
@@ -398,9 +479,21 @@ footer {
         height: 41px;
     }
 
+    /*_______________ Header nav _______________ */
+    .header-buttons {
+        font-size: 20px;
+    }
 
-    /* BODY */
+    #active-button {
+        border: solid 3px #F4F4F4;
+        font-size: 20px;
+    }
+    /*_______________ /Header nav _______________ */ 
+    /***_______________ /HEADER _______________ ***/
 
+
+    /***_______________ BODY _______________ ***/
+    /*_______________ TITLES _______________ */
     .title-img {
         margin-right: 100px;
         display: flex;
@@ -427,9 +520,10 @@ footer {
     #description {
         font-size: 16px;
     }
+    /*_______________ /TITLES _______________ */
 
-    /* TRY NOW BUTTON */
-    .button-container{
+    /*_______________ "Try Now" Button _______________ */
+    .button-container {
         margin-top: 40px;
     }
 
@@ -439,15 +533,17 @@ footer {
         height: 50px;
         width: 120px;
     }
-    
+    /*_______________ "Try Now" Button _______________ */
 
-    /* RECTANGLE */
+
+    /*_______________ Rectangle on scroll _______________ */
     .rectangle-text {
         font-size: 52px;
     }
+    /*_______________ /Rectangle on scroll _______________ */
 
 
-    /* 4 content blocks */
+    /*_______________ 4 content blocks _______________ */
     .content-block {
         margin-top: 125px;
     }
@@ -534,22 +630,30 @@ footer {
         width: 66px;
         height: 61px;
     }
+    /*_______________ /4 content blocks _______________ */
+    /***_______________ /BODY _______________ ***/
 
-    /* FOOTER */
+
+    /***_______________ FOOTER _______________ ***/
     .footer-block {
         height: 82px;
         font-size: 13px;
     }
-    #footer-right-text{
+
+    #footer-right-text {
         width: 400px;
     }
+    /***_______________ /FOOTER _______________ ***/
 }
+/*** _________________________ /1160px _________________________***/
 
 
+/*** _________________________ 960px + 930px _________________________***/
 @media (max-width: 960px) {
     .header-buttons {
         font-size: 18px;
     }
+
     #active-button {
         border: solid 3px #F4F4F4;
         font-size: 18px;
@@ -560,6 +664,7 @@ footer {
     .header-buttons {
         font-size: 16px;
     }
+
     #active-button {
         border: solid 2px #F4F4F4;
         font-size: 16px;
@@ -568,42 +673,43 @@ footer {
     .rectangle-text {
         font-size: 44px;
     }
-    header{
+
+    header {
         height: 100px;
     }
-    .logo{
+
+    .logo {
         padding: 30px;
     }
 }
+/*** _________________________ /960px + 930px _________________________***/
 
 
 
-
-
-
-
-/* FOR TABLET IPAD AIR EXAMPLE */
+/*** _________________________ TABLET SCREEN _________________________***/
 @media (max-width: 900px) {
-    /* HEADER */
 
-    header{
+    /***_______________ HEADER _______________ ***/
+    header {
         height: 100px;
     }
-
-    .hamburger-tablet{
-        display: flex;
-        margin-right: 28px;
-    }
-    .header-buttons {
-        display: none;
-    }
-
     .logo {
         display: flex;
         width: 33px;
         height: 41px;
         padding: 30px;
     }
+
+    /*_______________ Header Nav _______________ */
+    .hamburger-tablet {
+        display: flex;
+        margin-right: 28px;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+
     #active-button {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         color: #F4F4F4;
@@ -615,9 +721,11 @@ footer {
         line-height: normal;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+    /*_______________ /Header Nav _______________ */
+    /***_______________ /HEADER _______________ ***/
 
-    /* BODY */
 
+    /***_______________ BODY _______________ ***/
     .title-img {
         margin-right: 100px;
         display: flex;
@@ -626,21 +734,21 @@ footer {
         margin-right: 30px;
     }
 
-    /* TRY NOW BUTTON */
-
+    /*_______________ "Try Now" Button _______________ */
     .button-container {
         margin-top: 35px;
     }
-    
+
     .button {
         width: 245px;
         height: 60px;
         font-size: 22px;
         padding: 10px 15px 10px 15px;
     }
+    /*_______________ /"Try Now" Button _______________ */
 
 
-    /* 4 content blocks */
+    /*_______________ 4 content blocks _______________ */
     .content-block {
         margin-top: 104px;
     }
@@ -731,38 +839,51 @@ footer {
         width: 55px;
         height: 50px;
     }
+    /*_______________ /4 content blocks _______________ */
+    /***_______________ /BODY _______________ ***/
 
-    /* FOOTER */
-    #footer-right-text{
+
+    /***_______________ FOOTER _______________ ***/
+    #footer-right-text {
         width: 300px;
     }
+    /***_______________ /FOOTER _______________ ***/
 }
+/*** _________________________ /TABLET SCREEN _________________________***/
 
 
 
 
 
-/* TABLET TO MOBILE TRANSFORMATION */
+/*** _________________________ MOBILE SCREEN _________________________***/
 @media (max-width: 755px) {
+    /***_______________ HEADER _______________ ***/
     header {
         display: none;
     }
-    .hamburger-tablet{
-        display: none;
+    .logo {
+        padding: 10px;
+        padding-right: 30px;
     }
-    .logo-mobile{
-        display: flex;
-        align-self: center;
-        justify-content: flex-end;
-    }
-    .logo-mobile-img{
+    .logo-mobile-img {
         padding: 10px;
         margin-right: 28px;
         width: 40px;
         height: 52px;
     }
 
-    .hamburger-mobile{
+    /*_______________ Header Nav _______________ */
+    .hamburger-tablet {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    .hamburger-mobile {
         display: flex;
         align-self: flex-start;
         margin-left: 28px;
@@ -774,8 +895,23 @@ footer {
         z-index: 1;
     }
 
-    /* BODY */
-    /* 3 lvl title & description styles*/
+    #active-button {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #F4F4F4;
+        border: solid 3px #F4F4F4;
+        padding: 0px 5px 2px 5px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    /*_______________ /Header Nav _______________ */
+    /***_______________ /HEADER _______________ ***/
+
+
+    /***_______________ BODY _______________ ***/
+    /*_______________ 3 lvl title & description styles _______________ */
     .title-container {
         display: flex;
         flex-wrap: wrap;
@@ -785,10 +921,6 @@ footer {
         margin: 0;
     }
 
-    .logo{
-        padding: 10px;
-        padding-right: 30px;
-    }
     .title-img {
         display: none;
     }
@@ -850,9 +982,10 @@ footer {
         margin-top: 25px;
         width: 290px;
     }
+    /*_______________ /3 lvl title & description styles _______________ */
 
 
-    /* "Try Now" button */
+    /*_______________ "Try Now" button _______________ */
     .button-container {
         margin-top: 35px;
         align-self: center;
@@ -879,8 +1012,10 @@ footer {
         color: #111111;
         border: solid #111111;
     }
+    /*_______________ /"Try Now" button _______________ */
 
-    /* rectangle-on-scroll block */
+
+    /*_______________ rectangle-on-scroll block _______________ */
     .rectangle-on-scroll {
         position: relative;
         justify-content: center;
@@ -902,8 +1037,10 @@ footer {
         position: absolute;
         top: 60%;
     }
+    /*_______________ /rectangle-on-scroll block _______________ */
 
-    /* 4 content blocks */
+
+    /*_______________ 4 content block _______________ */
     .content-block {
         margin-top: 78px;
     }
@@ -996,9 +1133,11 @@ footer {
         width: 41px;
         height: 38px;
     }
+    /*_______________ /4 content block _______________ */
+    /***_______________ /BODY _______________ ***/
 
-    /* FOOTER */
 
+    /***_______________ FOOTER _______________ ***/
     .footer-wave-img {
         width: 100%;
         margin-top: 25px;
@@ -1007,7 +1146,10 @@ footer {
     .footer-block {
         font-size: 10px;
     }
-    #footer-right-text{
+
+    #footer-right-text {
         width: 200px;
     }
+    /***_______________ /FOOTER _______________ ***/
 }
+/*** _________________________ /MOBILE SCREEN _________________________***/

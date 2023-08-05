@@ -7,6 +7,7 @@
     <title>Home Page</title>
   </head>
 
+  <!---------------------- HEADER ---------------------->
   <header class="js-header">
     <div class="logo">
       <img src="images/Logo.svg" alt="" />
@@ -25,9 +26,14 @@
     </div>
     <img src="images/SIDEBUTTON.svg" alt="" class="hamburger-tablet" />
   </header>
+  <!---------------------- /HEADER ---------------------->
 
+
+
+  <!---------------------- BODY ---------------------->
   <body>
-    <!-- SIDE MENU -->
+
+    <!------------ SIDE MENU TABLET------------>
     <div class="side-menu">
       <ul>
         <li><a href="#" id="active-button">Home</a></li>
@@ -36,17 +42,25 @@
         <li><a href="#">About Us</a></li>
       </ul>
     </div>
+    <!------------ /SIDE MENU TABLET------------>
 
 
+    <!------------ MOBILE  ICONS------------>
     <div class="logo-mobile">
-      <img src="images/Logo.svg" alt="" class="logo-mobile-img">
+      <img src="images/Logo.svg" alt="" class="logo-mobile-img" />
     </div>
 
     <div class="hamburger-mobile">
-      <img src="images/SIDEBUTTON_mobile.svg" alt="" class="hamburger-mobile-img" />
+      <img
+        src="images/SIDEBUTTON_mobile.svg"
+        alt=""
+        class="hamburger-mobile-img"
+      />
     </div>
+    <!------------ /MOBILE  ICONS------------>
 
-    <!-- 3 lvl title & description-->
+
+    <!------------ 3 lvl title & description------------>
     <div class="title-container">
       <div class="title">
         <h3 id="top-level-title">Let Me Stand</h3>
@@ -62,12 +76,15 @@
         <div class="button-container">
           <button class="button">Try Now</button>
         </div>
+        <!-- /"Try Now" button -->
       </div>
       <div class="title-img">
         <img src="images/SceneX2.svg" alt="" id="desktop-scene" />
         <img src="images/SceneX1.5.svg" alt="" id="notebook-scene" />
       </div>
     </div>
+    <!------------ /3 lvl title & description------------>
+
 
     <!-- white hard shaped rectangle that placed
     on the bottom of screen is start position -->
@@ -75,8 +92,11 @@
       <img src="images/Rectangle-on-scroll.svg" alt="" class="rectangle-img" />
       <div class="rectangle-text">I woke up in a new Bugatti</div>
     </div>
+    <!-- /white hard shaped rectangle that placed
+    on the bottom of screen is start position -->
 
-    <!-- 4 blocks with some content -->
+
+    <!------------ 4 blocks with some content ------------>
     <div class="content-block">
       <div class="square">
         <h3 id="first-block-title">Building</h3>
@@ -123,8 +143,24 @@
       </div>
       <div class="square-shadow"></div>
     </div>
-  </body>
+    <!------------ /4 blocks with some content ------------>
 
+
+    <!------------ SIDE MENU MOBILE ------------>
+    <div class="sidemenu-mobile">
+      <ul>
+        <li><a href="#" id="active-button">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="portfolio_page.html">Portfolio</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <!------------ /SIDE MENU MOBILE ------------>
+  </body>
+  <!---------------------- /BODY ---------------------->
+
+
+  <!---------------------- FOOTER ---------------------->
   <footer>
     <img src="images/Footer.svg" alt="" class="footer-wave-img" />
     <div class="footer-block">
@@ -135,7 +171,11 @@
       </div>
     </div>
   </footer>
+  <!---------------------- /FOOTER ---------------------->
 
+  <!---------------------- SCRIPTS ---------------------->
   <script src="scripts/header.js"></script>
   <script src="scripts/hamburger_script.js"></script>
+  <script src="scripts/hamburger_script_mobile.js"></script>
+  <!---------------------- /SCRIPTS ---------------------->
 </html>
