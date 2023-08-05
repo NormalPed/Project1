@@ -18,13 +18,13 @@ header{
     justify-content: flex-end;
 }
 
-.close-cross{
+#close-cross{
     font-size: 60px;
     cursor: pointer;
     color: #F4F4F4;
     margin-right: 5%;
 }
-.close-cross:hover{
+#close-cross:hover{
     color: #595959;
 }
 /*____________________ /HEADER ____________________*/
