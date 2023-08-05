@@ -1,0 +1,78 @@
+body {
+    background-color: #D16089;
+    color: #F4F4F4;
+    font-family: 'Montserrat', system-ui;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*____________________ HEADER ____________________*/
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close-cross{
+    font-size: 60px;
+    cursor: pointer;
+    color: #F4F4F4;
+    margin-right: 5%;
+}
+.close-cross:hover{
+    color: #595959;
+}
+/*____________________ /HEADER ____________________*/
+
+
+
+/*____________________ BODY ____________________*/
+.wrapper{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.text-container{
+    text-align: center;
+    width: 50%;
+}
+.text-container h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-bottom: 3px solid #F4F4F4;
+    padding-bottom: 2px;
+    margin: 0;
+}
+.text-container p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+/*____________________ /BODY ____________________*/
+
+
+
+/*____________________ FOOTER ____________________*/
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-img{
+    width: 100%;
+}
+/*____________________ /FOOTER ____________________*/
