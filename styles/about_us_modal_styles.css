@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+.text-container img{
+    display: none;
+}
+
 /*____________________ HEADER ____________________*/
 header{
     height: 100px;
@@ -76,3 +80,95 @@ footer {
     width: 100%;
 }
 /*____________________ /FOOTER ____________________*/
+
+
+/*** _________________________ 1366px _________________________***/
+@media (max-width: 1366px) {
+    .text-container h1{
+        font-size: 36px;
+    }
+    .text-container p{
+        font-size: 18px;
+    }
+}
+/*** _________________________ /1366px _________________________***/
+
+/*** _________________________ 1366px _________________________***/
+@media (max-width: 1366px) {
+    .text-container h1{
+        font-size: 36px;
+    }
+    .text-container p{
+        font-size: 18px;
+    }
+}
+/*** _________________________ /1366px _________________________***/
+
+/*** _________________________ 960px _________________________***/
+@media (max-width: 960px) {
+    .text-container h1{
+        font-size: 32px;
+    }
+    .text-container p{
+        font-size: 16px;
+    }
+}
+/*** _________________________ /960px _________________________***/
+
+
+
+/*** _________________________ TABLET SCREEN _________________________***/
+@media (max-width: 920px) {
+    .human-img img{
+        display: none;
+    }
+    .text-container img{
+        float: left;
+        display: inline;
+        height: 284px;
+        width: 204px;
+        margin-right: 10px;
+    }
+    .text-container h1{
+        font-size: 40px;
+    }
+    .text-container p{
+        font-size: 20px;
+    }
+    #close-cross{
+        font-size: 50px;
+    }
+    .text-container{
+        width: 90%;
+    }
+}
+/*** _________________________ /TABLET SCREEN _________________________***/
+
+
+/*** _________________________ MOBILE SCREEN _________________________***/
+@media (max-width: 700px) {
+    header{
+        height: 50px;
+    }
+    
+    .text-container h1{
+        font-size: 28px;
+    }
+    .text-container p{
+        font-size: 16px;
+    }
+    .wrapper{
+        justify-content: center;
+    }
+    .text-container img{
+        float: left;
+        display: inline;
+        height: 214px;
+        width: 154px;
+        margin-right: 10px;
+    }
+    .text-container{
+        width: 90%;
+    }
+}
+/*** _________________________ /MOBILE SCREEN _________________________***/
