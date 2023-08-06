@@ -300,7 +300,12 @@ header.fixed {
 
 .rectangle-text {
     max-width: 100%;
-    color: #7B7B7B;
+    background-color: #7B7B7B;
+    color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -435,6 +440,88 @@ footer {
 }
 /*** _________________________ /FOOTER _________________________***/
 
+
+/*** _________________________ CONTACT US POPUP _________________________***/
+    #popup-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s;
+    }
+    #popup{
+        position: fixed;
+        width: 60%;
+        height: 60%;
+        bottom: -60%;
+        background-color: #F4F4F4;
+        border-radius: 10px 10px 0px 0px;
+        padding: 0px;
+        box-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
+        z-index: 100;
+        transition: bottom 0.3s ease;
+    }
+    #popup-overlay.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    #popup.opened{
+        bottom: 0%;
+    }
+
+    .popup-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: #848484 2px solid;
+        padding-bottom: 10px;
+    }
+    .popup-text h2{
+        background-color: #848484;
+        color: transparent;
+        text-shadow: 2px 2px 3px rgba(255,255,255,0.4);
+        -webkit-background-clip: text;
+            -moz-background-clip: text;
+                background-clip: text;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    .popup-text p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    #Facebook{
+        margin-right: 23px;
+    }
+/*** _________________________ /CONTACT US POPUP _________________________***/
 
 
 /*****-----_________________________ ON DISPLAY SIZE CHANGED _________________________-----*****/
