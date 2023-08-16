@@ -1,0 +1,33 @@
+body {
+    background-color: #D16089;
+    color: #F4F4F4;
+    font-family: 'Montserrat', system-ui;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/SceneX2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(3px);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 40%;
+    height: 60%;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.3);
+}
