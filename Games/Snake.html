@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/Snake.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/Snake.css" />
     <title>Snake</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div onclick="location.href='../Secret_place.html'" class="back-to-games">
-          <div class="arrow-back">
-            <img src="../images/Arrow_Back_to_home.svg" alt="" />
-          </div>
-          <div class="text-back">Back to games</div>
+      <div onclick="location.href='../Secret_place.html'" class="back-to-games">
+        <div class="arrow-back">
+          <img src="../images/Arrow_Back_to_home.svg" alt="" />
         </div>
-      </header>
+        <div class="text-back">Back to games</div>
+      </div>
+    </header>
     <canvas id="game" width="608" height="608"></canvas>
-    <script src="scripts/Snake.js"></script>
-</body>
+
+    <div class="menu">
+      <div class="Game-speed-container">
+        <div>Speed:</div>
+        <img src="Images/game_arrow_left.svg" class="speed-arrows" id="left-arrow" width="60" alt="">
+        <div id="Speed"></div>
+        <img src="Images/game_arrow_right.svg" class="speed-arrows" id="right-arrow" width="60" alt="">  
+      </div>
+
+      <div class="Game-food-container">
+        <div>Food:</div>
+      </div>
+      <div class="Game-Arena-container">
+        <div>Arena:</div>
+      </div>
+
+      <div class="Play-btn">
+        <button id="Start-button">Start</button>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/Snake.js"></script>
 </html>
