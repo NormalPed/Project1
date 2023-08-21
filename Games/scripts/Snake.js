@@ -2,8 +2,41 @@
 let StartButton = document.getElementById("Start-button");
 let Menu = document.querySelector(".menu");
 let speed = document.getElementById("Speed");
-let leftArrow = document.getElementById("left-arrow");
-let rightArrow = document.getElementById("right-arrow");
+let leftArrowSpeed = document.getElementById("left-arrow");
+let rightArrowSpeed = document.getElementById("right-arrow");
+let leftArrowFood = document.getElementById("left-arrow-food");
+let rightArrowFood = document.getElementById("right-arrow-food");
+let imageElement = document.getElementById("food-img");
+
+
+// ____________IMAGES
+let gameFood;
+let imagesSource = [
+    "Images/carrot.png",
+    "Images/fries.png",
+    "Images/garlic.png",
+    "Images/kebab.png",
+    "Images/sushi.png",
+];
+let currentImgIndex = 0;
+
+rightArrowFood.addEventListener("click", ()=>{
+    if(currentImgIndex < 4){
+        currentImgIndex += 1;
+        imageElement.src = imagesSource[currentImgIndex];
+    }
+});
+leftArrowFood.addEventListener("click", ()=>{
+    if(currentImgIndex > 0){
+        currentImgIndex -= 1;
+        imageElement.src = imagesSource[currentImgIndex];
+    }
+});
+
+
+// ____________IMAGES
+
+// SPEED
 let userSpeed = 130;
 let gameSpeed;
 let speedArr = ["Slow", "Medium", "Fast"];
@@ -11,7 +44,7 @@ let speedArr = ["Slow", "Medium", "Fast"];
 let i = 0;
 speed.innerHTML = speedArr[i];
 
-rightArrow.addEventListener('click', ()=>{
+rightArrowSpeed.addEventListener('click', ()=>{
     if(i < 2){
         ++i;
         userSpeed -= 25;
@@ -21,7 +54,7 @@ rightArrow.addEventListener('click', ()=>{
     }
 });
 
-leftArrow.addEventListener('click', ()=>{
+leftArrowSpeed.addEventListener('click', ()=>{
     if(i > 0){
         --i;
         userSpeed += 25;
@@ -31,22 +64,95 @@ leftArrow.addEventListener('click', ()=>{
     }
 });
 
+// ARENA
+let ArenaIndex; 
+let gameArena;
+
+const arenaImg = document.querySelectorAll('.arenaImg');
+
+arenaImg.forEach(image => {
+  image.addEventListener('click', () => {
+    arenaImg.forEach(img => img.classList.remove('selected'));
+
+    image.classList.add('selected');
+
+    switch (image.id) {
+        case "arena-Green":
+            ArenaIndex = 0;
+            break;
+        case "arena-Blue":
+            ArenaIndex = 1;
+            break;
+        case "arena-Brown":
+            ArenaIndex = 2;
+            break;
+        default:
+            ArenaIndex = 0;
+            break;
+    }
+
+  });
+});
+
+
+
+// Start Game On Button
 StartButton.addEventListener('click',()=>{
     Menu.classList.toggle('closed');
     gameSpeed = userSpeed;
+    gameFood = currentImgIndex;
+    gameArena = ArenaIndex;
     startGame();
 });
 
+
+
+
+// __________________________________________________________________________GAME______________________________________________________________
 function startGame(){
     // ___main code
     const canvas = document.getElementById("game");
     const ctx = canvas.getContext("2d");
 
     const ground = new Image();
-    ground.src = "Images/Snake_arena_green.png";
+    switch (gameArena) {
+        case 0:
+            ground.src = "Images/Snake_arena_green.png";
+            break;
+        case 1:
+            ground.src = "Images/Snake_arena_blue.png";
+            break;
+        case 2:
+            ground.src = "Images/Snake_arena_brown.png";
+            break;
+        default:
+            ground.src = "Images/Snake_arena_green.png";
+            break;
+    }
+    
 
     const foodImg = new Image();
-    foodImg.src = "Images/food.png";
+    switch (gameFood) {
+        case 0:
+            foodImg.src = "Images/carrot.png";
+            break;
+        case 1:
+            foodImg.src = "Images/fries.png";
+            break;
+        case 2:
+            foodImg.src = "Images/garlic.png";
+            break;
+        case 3:
+            foodImg.src = "Images/kebab.png";
+            break;
+        case 4:
+            foodImg.src = "Images/sushi.png";
+            break;
+        default:
+            foodImg.src = "Images/carrot.png";
+            break;
+    }
+    
 
     let box = 32;
 
@@ -88,6 +194,7 @@ function startGame(){
         for(let i = 0; i < arr.length; ++i){
             if(arr[i].x == head.x && arr[i].y == head.y){
                 clearInterval(game);
+                Menu.classList.remove('closed');
             }
         }
     }
@@ -100,7 +207,7 @@ function startGame(){
         ctx.drawImage(foodImg, food.x, food.y);
 
         for(let i = 0; i<snake.length; ++i){
-            ctx.fillStyle = i == 0 ? "green" : "lightblue";
+            ctx.fillStyle = i == 0 ? "gray" : "lightgrey";
             ctx.fillRect(snake[i].x, snake[i].y, box, box);
         }
 
@@ -117,6 +224,7 @@ function startGame(){
 
         if(snakeX > box*17 || snakeX < box || snakeY< 3*box || snakeY > box*17){
             clearInterval(game);
+            Menu.classList.remove('closed');
         }
 
         if(dir == "left"){

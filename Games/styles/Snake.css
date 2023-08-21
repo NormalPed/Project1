@@ -56,12 +56,12 @@ header{
     color: #000;
     font-size: 24px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 5%;
+    margin-left: 2.3%;
 
 }
 
@@ -69,16 +69,74 @@ header{
     left:-100%;
 }
 
+.Menu-title{
+    align-self: center;
+    font-size:40px;
+    font-weight: 700;
+}
+
 .Game-speed-container{
     display: flex;
     justify-content: space-between;
     gap: 20%;
     margin-right: 45%;
+    margin-left: 15%;
 }
 
-.speed-arrows{
+.arrows{
     cursor: pointer;
 }
-.speed-arrows:active{
+.arrows:active{
     width: 50px;
+}
+
+.Game-food-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    margin-right: 45%;
+    margin-left: 15%;
+
+}
+.Game-Arena-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    margin-right: 45%;
+    margin-left: 15%;
+}
+
+.Play-btn{
+    align-self: center;
+}
+
+#Start-button{
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    border: none;
+    color: #f4f4f4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: rgb(15, 155, 15);
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#Start-button:active{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size:40px;
+}
+
+.arenaImg{
+    border: 3px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.arenaImg.selected {
+    border-color: green;
+    transform: scale(1.1);
 }
