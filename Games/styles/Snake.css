@@ -1,0 +1,38 @@
+canvas{
+    display: block;
+    margin: 0 auto;
+}
+body {
+    background-color: #FFBFBF;
+    margin: 0;
+    height: 100%;
+}
+header{
+    color: #FFF;
+    font-family: 'Montserrat', system-ui;
+    background-color: #D16089;
+    height: 95px;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.back-to-games{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 170px;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.back-to-games:hover{
+    border-bottom: 3px white solid;
+}
+.text-back{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1263,3 +1263,26 @@ footer {
 /*** _________________________ /CONTACT US POPUP _________________________***/
 }
 /*** _________________________ /MOBILE SCREEN _________________________***/
+
+
+#secret-place{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 13% 13%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 50s ease infinite;
+}
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+   
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
