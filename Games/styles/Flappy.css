@@ -1,0 +1,142 @@
+canvas{
+    display: block;
+    margin: 0 auto;
+    
+}
+body {
+    background-color: #FFBFBF;
+    margin: 0;
+    height: 100%;
+    color: #FFF;
+    font-family: 'Montserrat', system-ui;
+}
+header{
+
+    background-color: #D16089;
+    height: 95px;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.back-to-games{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 170px;
+    cursor: pointer;
+    margin-left: 6%;
+}
+
+.back-to-games:hover{
+    border-bottom: 3px white solid;
+}
+.text-back{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.menu{
+    position: fixed;
+    width: 35%;
+    height: 50%;
+    background-color: #f4f4f4;
+    top: 25%;
+    bottom: 25%;
+    left: 30%;
+    right: 30%;
+    border-radius: 20px;
+    border: 2px solid gray;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25);
+    transition: left 1s ease;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2.3%;
+
+}
+
+.menu.closed{
+    left:-100%;
+}
+
+.Menu-title{
+    align-self: center;
+    font-size:40px;
+    font-weight: 700;
+}
+
+.Game-speed-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    margin-right: 45%;
+    margin-left: 15%;
+}
+
+.arrows{
+    cursor: pointer;
+}
+.arrows:active{
+    width: 50px;
+}
+
+.Game-food-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    margin-right: 45%;
+    margin-left: 15%;
+
+}
+.Game-Arena-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    margin-right: 45%;
+    margin-left: 15%;
+}
+
+.Play-btn{
+    align-self: center;
+}
+
+#Start-button{
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    border: none;
+    color: #f4f4f4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: rgb(15, 155, 15);
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#Start-button:active{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size:40px;
+}
+
+.arenaImg{
+    border: 3px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.arenaImg.selected {
+    border-color: green;
+    transform: scale(1.1);
+}
