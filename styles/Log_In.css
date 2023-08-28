@@ -123,3 +123,11 @@ button:active{
     display: flex;
     justify-content: space-between;
 }
+
+#reg-info{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5%;
+}
